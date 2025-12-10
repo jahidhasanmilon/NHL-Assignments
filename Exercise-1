@@ -1,0 +1,32 @@
+import csv
+import numpy as np
+from typing import Set,Tuple, List
+import torch
+import torch.utils
+import torch.utils.data
+import torch.nn as nn
+import torchvision
+NoneType = type(None)
+import matplotlib.pyplot as plt
+from IPython.display import display, clear_output
+from PIL import Image
+import torchvision.transforms.functional as TF
+from torchvision.models import vgg11
+from torchvision.models import mobilenet_v2
+import torchvision.transforms as transforms
+import time
+
+from typing import Set
+
+def id_to_fruit(fruit_id: int, fruits: Set[str]) -> str
+"""
+converts fruit name by changing set to sorted list and accessing index
+"""
+sorted_fruits = sorted(list(fruits))
+
+if 0<= fruit_id < len(sorted_fruits):
+   return sorted_fruits[fruit_id]
+
+raise RuntimeError(f"Fruit with id {fruit_id} does not exist")
+
+print(id_to_fruit(4, ["apple", "orange", "melon", "kiwi", "strawberry"]))
